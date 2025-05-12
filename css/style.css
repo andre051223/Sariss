@@ -136,7 +136,7 @@ header{
 .pantalones,
 .cobijas{
   border-radius: 10px;
-  margin: 10px;
+  margin: 15px;
   width: auto;
   height: 600px;
 
@@ -284,3 +284,102 @@ footer{
   }
 }
 
+@media (max-width: 1200px) {
+  .productos-Sariss .right-column {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .servicios {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 992px) {
+  header {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .cover-text,
+  .productos-text {
+    width: 75%;
+  }
+
+  .productos-Sariss {
+    grid-template-columns: 1fr;
+  }
+
+  .productos-Sariss .left-column {
+    height: 400px;
+  }
+
+  .productos-Sariss .right-column {
+    grid-template-columns: 1fr;
+  }
+
+  .hoodies,
+  .chalecos,
+  .chaquetas,
+  .blusas,
+  .pantalones,
+  .cobijas {
+    height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sobre-nosotros {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-buttons {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  footer {
+    grid-template-columns: 1fr;
+  }
+
+  footer img {
+    width: 40%;
+  }
+}
+
+@media (max-width: 576px) {
+  .cover {
+    height: 100vh;
+  }
+
+  .cover-text,
+  .productos-text {
+    width: 90%;
+  }
+
+  .productos-Sariss .left-column {
+    height: 300px;
+  }
+
+  .hoodies,
+  .chalecos,
+  .chaquetas,
+  .blusas,
+  .pantalones,
+  .cobijas {
+    height: 300px;
+  }
+
+  .servicios img {
+    width: 75%;
+  }
+
+  .contact-buttons .email-button,
+  .contact-buttons .whatsapp-button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+}
